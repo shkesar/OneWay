@@ -1,0 +1,71 @@
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <link rel="prefetcher" href="img/brakeoncar.png">
+    <link rel="prerender" href="img/brakeoncar.png">
+
+    <style type="text/css">
+
+   .button {
+   	width: 150px;
+   border-top: 1px solid #96d1f8;
+   background: #695714;
+   background: -webkit-gradient(linear, left top, left bottom, from(#dab737), to(#695714));
+   background: -webkit-linear-gradient(top, #dab737, #695714);
+   background: -moz-linear-gradient(top, #dab737, #695714);
+   background: -ms-linear-gradient(top, #dab737, #695714);
+   background: -o-linear-gradient(top, #dab737, #695714);
+   padding: 13.5px 27px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #980152;
+   font-size: 17px;
+   font-family: Georgia, Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border-top-color: #dab737;
+   background: #dab737;
+   color: #990150;
+   }
+.button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+
+    </style>
+</head>
+<body bgcolor="#F1f1f1" id="bdy">
+<center>
+	
+	<img src="img/end/go.png">
+	<br>
+	
+			<img src="img/end/1.jpg" width="150" height="150" style="border:10px solid #FFF;" id="box">
+			<br>
+				<button class="button" onclick="location.href='index.html'">again ?</button>
+				<br><br>
+				<button class="button" onclick="location.href='welcome.html'">menu</button>
+	<script>
+
+
+
+	var imgNo=Math.ceil(Math.random()*3);
+	switch(imgNo)
+	{
+		case 1: document.getElementById('box').src="img/end/2.jpg"; break;
+		case 2: document.getElementById('box').src="img/end/1.jpg"; break;
+		case 3: document.getElementById('box').src="img/end/3.jpg"; break;
+	}
+
+	</script>
+</center>
+</body>
+</html>

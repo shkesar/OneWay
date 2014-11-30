@@ -1,0 +1,8 @@
+body
+{
+    margin: 0;
+}
+#cnv
+{
+    background-image: url('../img/bg.jpg');
+}

@@ -1,0 +1,80 @@
+
+<html>
+<head>
+<script src='cordova.js'></script>
+<script src='cordova_plugin.js'></script>
+<script>
+			function exit()
+             {
+                navigator.app.exitApp();
+             }
+
+
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0" />
+<style>
+@font-face
+{
+	font-family: font;
+	src: url('file:///android_asset/www/fonts/font.ttf');
+}
+body
+{
+	color: #FFF;
+	width:100%;
+	margin: 0px auto;
+	background-color: #36BCAE;
+	border: 2px solid black;
+	overflow: hidden;
+	font-family:font;
+}
+
+
+.btn {
+	font-family:font;
+   border: 2px solid #FFF;
+   background: transparent;
+   padding: 12.5px 25px;
+   width: 67%;
+   color: white;
+   font-size: 17px;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+
+
+</style>
+<script>
+
+ function toggle()
+ {
+ 	var r=Math.floor(Math.random()*255);
+ 	var g=Math.floor(Math.random()*255);
+ 	var b=Math.floor(Math.random()*255);
+ 	document.body.style.background='rgb('+r+','+g+','+b+')';
+ }
+ 
+ setInterval(function(){toggle();},600);
+
+</script>
+</head>
+<body>
+<center>
+<br><br><br><h1 style='font-size:60px;'>One way </h1>
+<br><br><br>
+<button class='btn' onclick="location.href='file:///android_asset/www/index.html'">drive</button>
+<br><br>
+<button class='btn'>go pro</button>
+<br><br>
+<button class='btn'>car shop</button>
+<br><br>
+<button class='btn' onclick="exit();">exit</button>
+
+
+
+</div>
+
+</div>
+<body>
+</html>
